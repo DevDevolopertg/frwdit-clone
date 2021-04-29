@@ -42,6 +42,7 @@ async def run(bot, message):
                 chat_id=TO,
                 from_chat_id=FROM,       
                 caption=Translation.CAPTION.format(file_name),
+                parse_mode="md",
                 message_id=message.message_id
             )
             files_count += 1
